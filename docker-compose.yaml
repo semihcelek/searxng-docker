@@ -31,8 +31,8 @@ services:
     ports:
       - "8090:8080"
     volumes:
-      - ./searxng.png:/usr/local/searxng/searx/static/themes/simple/img/searxng.png
-      - ./searxng.svg:/usr/local/searxng/searx/static/themes/simple/img/searxng.svg
+      - ./searxng.png:/usr/local/searxng/searx/static/themes/simple/img/searxng.png:ro
+      - ./searxng.svg:/usr/local/searxng/searx/static/themes/simple/img/searxng.svg:ro
       - ./searxng:/etc/searxng:rw
     environment:
       - SEARXNG_BASE_URL=https://${SEARXNG_HOSTNAME:-localhost}/
