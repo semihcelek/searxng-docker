@@ -56,6 +56,4 @@ networks:
     external: true
 
 volumes:
-  caddy-data:
-  caddy-config:
   valkey-data2:
