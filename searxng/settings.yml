@@ -2,10 +2,15 @@
 use_default_settings: true
 server:
   # base_url is defined in the SEARXNG_BASE_URL environment variable, see .env and docker-compose.yml
-  secret_key: "ultrasecretkey"  # change this!
+  secret_key: "1ba436db00f4256b15bc02fc20d4742b1cb7f1df41810ccf48f79c2d12f249b2"  # change this!
   limiter: true  # can be disabled for a private instance
   image_proxy: true
 ui:
   static_use_hash: true
 redis:
   url: redis://redis:6379/0
+general:
+  instance_name: "MindAware"
+  contract_url: false
+#search:
+#  autocomplete: "duckduckgo"
